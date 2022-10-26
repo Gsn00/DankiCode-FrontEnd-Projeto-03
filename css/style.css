@@ -1,0 +1,510 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat;
+}
+
+html, body {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.center {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	min-height: 600px;
+	height: 90vh;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/capa.png');
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 2%;
+	height: 10vh;
+}
+
+.logo {
+	width: 150px;
+	height: 30px;
+	background-image: url('../images/logo-danki.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-desktop ul {
+	list-style: none;
+	display: flex;
+}
+
+.menu-desktop ul li {
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+.menu-desktop ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-mobile {
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.menu-mobile ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	list-style-type: none;
+	background-color: white;
+	text-align: center;
+}
+
+.menu-mobile ul li {
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+	transition: 0.5s;
+	font-weight: bold;
+}
+
+.menu-mobile ul li:hover {
+	background-color: rgba(240, 240, 240, 1.0);
+}
+
+.menu-mobile ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.article1-container {
+	min-height: 500px;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.article1 {
+	margin: 50px;
+	max-width: 500px;
+	color: white;
+}
+
+.article1 h2 {
+	font-size: 38px;
+	font-weight: normal;
+}
+
+.article1 p {
+	margin-top: 10px;
+}
+
+.section-01 {
+	padding: 60px 2%;
+	width: 100%;
+	background-color: #472562;
+	color: white;
+}
+
+.section-01-content {
+	position: relative;
+	width: 850px;
+	margin: 0 auto;
+}
+
+.section-01-content h2 {
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+.section-01-content p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.section-01-content ul {
+	list-style-position: inside;
+	margin-bottom: 10px;
+}
+
+.section-01-content ul li {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.section-01-content input {
+	background-color: #FF703D;
+	color: white;
+	border: none;
+	width: 170px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.device-image {
+	width: 500px;
+	height: 500px;
+	background-image: url('../images/device.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	position: absolute;
+	bottom: -60px;
+	right: -10px;
+}
+
+.section-02-content {
+	padding-top: 80px;
+	padding-bottom: 200px;
+	margin: 0 auto;
+	width: 900px;
+	max-width: 95%;
+	text-align: center;
+	position: relative;
+}
+
+.section-02-content h2 {
+	font-size: 32px;
+	font-weight: normal;
+	padding-bottom: 15px;
+}
+
+.section-02-content p {
+	padding-bottom: 80px;
+}
+
+.section-02-content .image-mockup {
+	width: 98%;
+	max-width: 900px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0px 0px 15px 1px rgba(40, 40, 40, 0.5);
+}
+
+.section-03 {
+	display: flex;
+}
+
+.wrapper-01, .wrapper-02 {
+	background-color: #845FA7;
+	vertical-align: top;
+	width: 50%;
+}
+
+.wrapper-01-content {
+	float: right;
+	color: white;
+}
+
+.wrapper-01-content, .wrapper-02-content {
+	padding: 220px 50px 50px 50px;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper-01-content h2, .wrapper-02-content h2 {
+	font-weight: normal;
+	font-size: 28px;
+	font-style: italic;
+}
+
+.wrapper-01-content h2 {
+	margin-bottom: 10px;
+}
+
+.wrapper-02 {
+	background-color: #fbf7ff;
+}
+
+.scroll {
+	overflow: hidden;
+}
+
+.wrapper-02 .author-info {
+	margin-bottom: 10px;
+}
+
+.wrapper-02 .author-title {
+	width: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+}
+
+.author-title h2 {
+	width: 100%;
+}
+
+.author-title span {
+	width: auto;
+	font-style: italic;
+	margin-bottom: 10px;
+	color: #232323;
+}
+
+.wrapper-02 .image-author {
+	width: 60px;
+	height: 60px;
+	background-image: url('../images/actor1.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.slider-bullets {
+	display: flex;
+}
+
+.slider-bullets span {
+	margin: 15px 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(40, 40, 40, 0.3);
+	cursor: pointer;
+	transition: 1s;
+}
+
+.slider-bullets .current {
+	background-color: rgba(40, 40, 40, 0.7);
+}
+
+.section-03-1 {
+	text-align: center;
+	padding: 60px 0;
+	color: #845FA7;
+}
+
+.section-03-1 .diferenciais-container{
+	display: flex;
+}
+
+.section-03-1 .diferencial-single {
+	padding: 30px;
+	width: calc(100% / 3);
+}
+
+.section-03-1 i {
+	font-size: 70px;
+	padding: 10px 0;
+}
+
+.section-04 {
+	background-color: #472562;
+	color: white;
+}
+
+.section-04-content {
+	display: flex;
+}
+
+.section-04-content .form {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.section-04-content .form * {
+	margin-bottom: 15px;
+}
+
+.section-04-content .form h2, .map h2 {
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.section-04-content .form input {
+	height: 45px;
+	padding: 0 10px;
+	font-size: inherit;
+	outline: none;
+}
+
+.section-04-content .form textarea {
+	height: 120px;
+	padding: 10px;
+	resize: none;
+	font-size: inherit;
+	outline: none;
+}
+
+.section-04-content .form input[type="submit"] {
+	background-color: #FF703D;
+	color: white;
+	border: none;
+	width: 170px;
+	height: 30px;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.section-04-content .map-container {
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.section-04-content .map-container * {
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+.section-04-content .map {
+	padding-top: 70%;
+	width: 70%;
+	max-width: 480px;
+	background-color: white;
+	border: 4px solid #ccc;
+	position: relative;
+}
+
+.section-04-content .map-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+
+footer {
+	background-color: #192123;
+}
+
+footer .center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+footer p {
+	font-size: 14px;
+	color: white;
+}
+
+@media screen and (max-width: 900px) {
+	.article1-container {
+		height: 80vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu-desktop {
+		display: none;
+	}
+	.menu-mobile {
+		display: block;
+	}
+	.article1-container h2 {
+		font-size: 28px;
+	}
+	.section-01-content {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.section-01-content h2 {
+		font-size: 28px;
+	}
+	.section-01-content ul {
+		text-align: left;
+	}
+	.section-01-content input {
+		width: 250px;
+		height: 40px;
+	}
+	.device-image {
+		display: none;
+	}
+	.section-04-content {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.wrapper-01-content, .wrapper-02-content {
+		padding: 220px 20px 50px 20px;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.section-03-1 .diferenciais-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section-03-1 .diferencial-single {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.section-03 {
+		flex-direction: column;
+	}
+	.wrapper-01, .wrapper-02 {
+		width: 100%;
+	}
+	.wrapper-01-content, .wrapper-02-content {
+		padding: 80px 20px 80px 20px;
+	}
+	.author-title {
+		margin-bottom: 10px;
+	}
+	.section-04-content .map {
+		width: 85%;
+		padding-top: 85%;
+	}
+	footer .center {
+		text-align: center;
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.section-04-content .form {
+		padding: 50px 15px;
+	}
+	.section-04-content .map-container {
+		padding: 50px 15px;
+	}
+}
